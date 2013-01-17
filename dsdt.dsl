@@ -3236,51 +3236,51 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                         {
                             While (One)
                             {
-                                Name (_T_0, 0x00)
-                                Store (ToInteger (Arg0), _T_0)
-                                If (LEqual (_T_0, 0x00))
+                                Name (T_0, 0x00)
+                                Store (ToInteger (Arg0), T_0)
+                                If (LEqual (T_0, 0x00))
                                 {
                                     Store (0x00, Local1)
                                 }
                                 Else
                                 {
-                                    If (LEqual (_T_0, 0x0F))
+                                    If (LEqual (T_0, 0x0F))
                                     {
                                         Store (0x01, Local1)
                                     }
                                     Else
                                     {
-                                        If (LEqual (_T_0, 0x1E))
+                                        If (LEqual (T_0, 0x1E))
                                         {
                                             Store (0x02, Local1)
                                         }
                                         Else
                                         {
-                                            If (LEqual (_T_0, 0x2E))
+                                            If (LEqual (T_0, 0x2E))
                                             {
                                                 Store (0x03, Local1)
                                             }
                                             Else
                                             {
-                                                If (LEqual (_T_0, 0x38))
+                                                If (LEqual (T_0, 0x38))
                                                 {
                                                     Store (0x04, Local1)
                                                 }
                                                 Else
                                                 {
-                                                    If (LEqual (_T_0, 0x48))
+                                                    If (LEqual (T_0, 0x48))
                                                     {
                                                         Store (0x05, Local1)
                                                     }
                                                     Else
                                                     {
-                                                        If (LEqual (_T_0, 0x52))
+                                                        If (LEqual (T_0, 0x52))
                                                         {
                                                             Store (0x06, Local1)
                                                         }
                                                         Else
                                                         {
-                                                            If (LEqual (_T_0, 0x64))
+                                                            If (LEqual (T_0, 0x64))
                                                             {
                                                                 Store (0x07, Local1)
                                                             }
@@ -3313,51 +3313,51 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                                 Release (\_SB.PCI0.LPC0.EC0.MUT1)
                                 While (One)
                                 {
-                                    Name (_T_0, 0x00)
-                                    Store (ToInteger (Local0), _T_0)
-                                    If (LEqual (_T_0, 0x00))
+                                    Name (T_0, 0x00)
+                                    Store (ToInteger (Local0), T_0)
+                                    If (LEqual (T_0, 0x00))
                                     {
                                         Store (0x00, Local1)
                                     }
                                     Else
                                     {
-                                        If (LEqual (_T_0, 0x01))
+                                        If (LEqual (T_0, 0x01))
                                         {
                                             Store (0x0F, Local1)
                                         }
                                         Else
                                         {
-                                            If (LEqual (_T_0, 0x02))
+                                            If (LEqual (T_0, 0x02))
                                             {
                                                 Store (0x1E, Local1)
                                             }
                                             Else
                                             {
-                                                If (LEqual (_T_0, 0x03))
+                                                If (LEqual (T_0, 0x03))
                                                 {
                                                     Store (0x2E, Local1)
                                                 }
                                                 Else
                                                 {
-                                                    If (LEqual (_T_0, 0x04))
+                                                    If (LEqual (T_0, 0x04))
                                                     {
                                                         Store (0x38, Local1)
                                                     }
                                                     Else
                                                     {
-                                                        If (LEqual (_T_0, 0x05))
+                                                        If (LEqual (T_0, 0x05))
                                                         {
                                                             Store (0x48, Local1)
                                                         }
                                                         Else
                                                         {
-                                                            If (LEqual (_T_0, 0x06))
+                                                            If (LEqual (T_0, 0x06))
                                                             {
                                                                 Store (0x52, Local1)
                                                             }
                                                             Else
                                                             {
-                                                                If (LEqual (_T_0, 0x07))
+                                                                If (LEqual (T_0, 0x07))
                                                                 {
                                                                     Store (0x64, Local1)
                                                                 }
@@ -7245,15 +7245,15 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                         Release (\_SB.PCI0.LPC0.EC0.MUT1)
                         While (One)
                         {
-                            Name (_T_0, 0x00)
-                            Store (ToInteger (Local0), _T_0)
-                            If (LEqual (_T_0, 0x01))
+                            Name (T_0, 0x00)
+                            Store (ToInteger (Local0), T_0)
+                            If (LEqual (T_0, 0x01))
                             {
                                 Notify (\_SB.PCI0.LPC0.EC0.DAL1, 0x80)
                             }
                             Else
                             {
-                                If (LEqual (_T_0, 0x02))
+                                If (LEqual (T_0, 0x02))
                                 {
                                     Notify (\_SB.PCI0.LPC0.EC0.DAL2, 0x80)
                                 }
@@ -8406,51 +8406,51 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                         {
                             While (One)
                             {
-                                Name (_T_0, 0x00)
-                                Store (ToInteger (Arg0), _T_0)
-                                If (LEqual (_T_0, 0x00))
+                                Name (T_0, 0x00)
+                                Store (ToInteger (Arg0), T_0)
+                                If (LEqual (T_0, 0x00))
                                 {
                                     Store (0x00, Local1)
                                 }
                                 Else
                                 {
-                                    If (LEqual (_T_0, 0x0F))
+                                    If (LEqual (T_0, 0x0F))
                                     {
                                         Store (0x01, Local1)
                                     }
                                     Else
                                     {
-                                        If (LEqual (_T_0, 0x1E))
+                                        If (LEqual (T_0, 0x1E))
                                         {
                                             Store (0x02, Local1)
                                         }
                                         Else
                                         {
-                                            If (LEqual (_T_0, 0x2E))
+                                            If (LEqual (T_0, 0x2E))
                                             {
                                                 Store (0x03, Local1)
                                             }
                                             Else
                                             {
-                                                If (LEqual (_T_0, 0x38))
+                                                If (LEqual (T_0, 0x38))
                                                 {
                                                     Store (0x04, Local1)
                                                 }
                                                 Else
                                                 {
-                                                    If (LEqual (_T_0, 0x48))
+                                                    If (LEqual (T_0, 0x48))
                                                     {
                                                         Store (0x05, Local1)
                                                     }
                                                     Else
                                                     {
-                                                        If (LEqual (_T_0, 0x52))
+                                                        If (LEqual (T_0, 0x52))
                                                         {
                                                             Store (0x06, Local1)
                                                         }
                                                         Else
                                                         {
-                                                            If (LEqual (_T_0, 0x64))
+                                                            If (LEqual (T_0, 0x64))
                                                             {
                                                                 Store (0x07, Local1)
                                                             }
@@ -8483,51 +8483,51 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                                 Release (\_SB.PCI0.LPC0.EC0.MUT1)
                                 While (One)
                                 {
-                                    Name (_T_0, 0x00)
-                                    Store (ToInteger (Local0), _T_0)
-                                    If (LEqual (_T_0, 0x00))
+                                    Name (T_0, 0x00)
+                                    Store (ToInteger (Local0), T_0)
+                                    If (LEqual (T_0, 0x00))
                                     {
                                         Store (0x00, Local1)
                                     }
                                     Else
                                     {
-                                        If (LEqual (_T_0, 0x01))
+                                        If (LEqual (T_0, 0x01))
                                         {
                                             Store (0x0F, Local1)
                                         }
                                         Else
                                         {
-                                            If (LEqual (_T_0, 0x02))
+                                            If (LEqual (T_0, 0x02))
                                             {
                                                 Store (0x1E, Local1)
                                             }
                                             Else
                                             {
-                                                If (LEqual (_T_0, 0x03))
+                                                If (LEqual (T_0, 0x03))
                                                 {
                                                     Store (0x2E, Local1)
                                                 }
                                                 Else
                                                 {
-                                                    If (LEqual (_T_0, 0x04))
+                                                    If (LEqual (T_0, 0x04))
                                                     {
                                                         Store (0x38, Local1)
                                                     }
                                                     Else
                                                     {
-                                                        If (LEqual (_T_0, 0x05))
+                                                        If (LEqual (T_0, 0x05))
                                                         {
                                                             Store (0x48, Local1)
                                                         }
                                                         Else
                                                         {
-                                                            If (LEqual (_T_0, 0x06))
+                                                            If (LEqual (T_0, 0x06))
                                                             {
                                                                 Store (0x52, Local1)
                                                             }
                                                             Else
                                                             {
-                                                                If (LEqual (_T_0, 0x07))
+                                                                If (LEqual (T_0, 0x07))
                                                                 {
                                                                     Store (0x64, Local1)
                                                                 }
@@ -9737,9 +9737,9 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                 And (Local0, 0x00FFFFFF, Local0)
                 While (One)
                 {
-                    Name (_T_0, 0x00)
-                    Store (ToInteger (Local0), _T_0)
-                    If (LEqual (_T_0, 0x56))
+                    Name (T_0, 0x00)
+                    Store (ToInteger (Local0), T_0)
+                    If (LEqual (T_0, 0x56))
                     {
                         If (MTCH (VALI, GWFS))
                         {
@@ -9788,7 +9788,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                     }
                     Else
                     {
-                        If (LEqual (_T_0, 0x050E))
+                        If (LEqual (T_0, 0x050E))
                         {
                             If (MTCH (VALI, GTPS))
                             {
@@ -9822,7 +9822,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                         }
                         Else
                         {
-                            If (LEqual (_T_0, 0x5A))
+                            If (LEqual (T_0, 0x5A))
                             {
                                 If (MTCH (VALI, FNDS))
                                 {
@@ -9852,7 +9852,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                             }
                             Else
                             {
-                                If (LEqual (_T_0, 0x7F))
+                                If (LEqual (T_0, 0x7F))
                                 {
                                     If (MTCH (VALI, GCCM))
                                     {
@@ -9892,7 +9892,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                                 }
                                 Else
                                 {
-                                    If (LEqual (_T_0, 0x62))
+                                    If (LEqual (T_0, 0x62))
                                     {
                                         If (MTCH (VALI, CESS))
                                         {
@@ -9914,7 +9914,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                                     }
                                     Else
                                     {
-                                        If (LEqual (_T_0, 0x11))
+                                        If (LEqual (T_0, 0x11))
                                         {
                                             Name (PBUF, Buffer (0x0200)
                                             {
@@ -10042,7 +10042,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                                         }
                                         Else
                                         {
-                                            If (LEqual (_T_0, 0xC000))
+                                            If (LEqual (T_0, 0xC000))
                                             {
                                                 If (MTCH (VALI, SHK0))
                                                 {
@@ -10084,7 +10084,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                                             }
                                             Else
                                             {
-                                                If (LEqual (_T_0, 0x1E))
+                                                If (LEqual (T_0, 0x1E))
                                                 {
                                                     If (MTCH (VALI, SBED))
                                                     {
@@ -10147,56 +10147,56 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                                                 }
                                                 Else
                                                 {
-                                                    If (LEqual (_T_0, 0x0154))
+                                                    If (LEqual (T_0, 0x0154))
                                                     {
                                                         \_SB.PCI0.LPC0.PHSR (0x12, 0x00)
                                                         Store (0x55, CECF)
                                                     }
                                                     Else
                                                     {
-                                                        If (LEqual (_T_0, 0x0155))
+                                                        If (LEqual (T_0, 0x0155))
                                                         {
                                                             \_SB.PCI0.LPC0.PHSR (0x12, 0x01)
                                                             Store (0x55, CECF)
                                                         }
                                                         Else
                                                         {
-                                                            If (LEqual (_T_0, 0x8F))
+                                                            If (LEqual (T_0, 0x8F))
                                                             {
                                                                 \_SB.PCI0.LPC0.PHSR (0x12, 0x02)
                                                                 Store (0x55, CECF)
                                                             }
                                                             Else
                                                             {
-                                                                If (LEqual (_T_0, 0x00C0008F))
+                                                                If (LEqual (T_0, 0x00C0008F))
                                                                 {
                                                                     \_SB.PCI0.LPC0.PHSR (0x12, 0x03)
                                                                     Store (0x55, CECF)
                                                                 }
                                                                 Else
                                                                 {
-                                                                    If (LEqual (_T_0, 0x00C2008F))
+                                                                    If (LEqual (T_0, 0x00C2008F))
                                                                     {
                                                                         \_SB.PCI0.LPC0.PHSR (0x12, 0x04)
                                                                         Store (0x55, CECF)
                                                                     }
                                                                     Else
                                                                     {
-                                                                        If (LEqual (_T_0, 0x00C9008F))
+                                                                        If (LEqual (T_0, 0x00C9008F))
                                                                         {
                                                                             \_SB.PCI0.LPC0.PHSR (0x12, 0x05)
                                                                             Store (0x55, CECF)
                                                                         }
                                                                         Else
                                                                         {
-                                                                            If (LEqual (_T_0, 0xC000))
+                                                                            If (LEqual (T_0, 0xC000))
                                                                             {
                                                                                 \_SB.PCI0.LPC0.PHSR (0x12, 0x08)
                                                                                 Store (0x55, CECF)
                                                                             }
                                                                             Else
                                                                             {
-                                                                                If (LEqual (_T_0, 0x014E))
+                                                                                If (LEqual (T_0, 0x014E))
                                                                                 {
                                                                                     If (MTCH (VALI, LEDG))
                                                                                     {
@@ -10230,7 +10230,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                                                                                 }
                                                                                 Else
                                                                                 {
-                                                                                    If (LEqual (_T_0, 0x47))
+                                                                                    If (LEqual (T_0, 0x47))
                                                                                     {
                                                                                         If (MTCH (VALI, RMGW))
                                                                                         {
@@ -10291,7 +10291,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                                                                                     }
                                                                                     Else
                                                                                     {
-                                                                                        If (LEqual (_T_0, 0x61))
+                                                                                        If (LEqual (T_0, 0x61))
                                                                                         {
                                                                                             If (MTCH (VALI, RMGS))
                                                                                             {
