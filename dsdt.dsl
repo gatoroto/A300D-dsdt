@@ -3018,6 +3018,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                         Store (ATIB, \_SB.PCI0.LPC0.INFO)
                         Store (Zero, \_SB.PCI0.LPC0.SMIC)
                         Release (\_SB.PCI0.LPC0.PSMX)
+			Return (ATIB)
                     }
 
                     Method (AF07, 0, NotSerialized)
@@ -3051,6 +3052,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                         Store (ATIB, \_SB.PCI0.LPC0.INFO)
                         Store (Zero, \_SB.PCI0.LPC0.SMIC)
                         Release (\_SB.PCI0.LPC0.PSMX)
+			Return (ATIB)
                     }
 
                     Method (AFN0, 0, Serialized)
@@ -8188,6 +8190,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                         Store (ATIB, \_SB.PCI0.LPC0.INFO)
                         Store (Zero, \_SB.PCI0.LPC0.SMIC)
                         Release (\_SB.PCI0.LPC0.PSMX)
+			Return (ATIB)
                     }
 
                     Method (AF07, 0, NotSerialized)
@@ -8221,6 +8224,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                         Store (ATIB, \_SB.PCI0.LPC0.INFO)
                         Store (Zero, \_SB.PCI0.LPC0.SMIC)
                         Release (\_SB.PCI0.LPC0.PSMX)
+			Return (ATIB)
                     }
 
                     Method (AFN0, 0, Serialized)
@@ -8879,6 +8883,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
 
                         Notify (\_SB.PCI0.PB2, 0x00)
                     }
+		    Return (ATPB)
                 }
 
                 Method (PX03, 1, NotSerialized)
@@ -8905,6 +8910,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                         Store (Zero, \_SB.PCI0.LPC0.SMIC)
                         Release (\_SB.PCI0.LPC0.PSMX)
                     }
+		    Return (ATPB)
                 }
             }
 
