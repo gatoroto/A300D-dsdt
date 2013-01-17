@@ -557,7 +557,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
         {
             Device (QWMI)
             {
-                Name (_HID, "*PNP0C14")
+                Name (_HID, "PNP0C14")
                 Name (_UID, 0x01)
                 Method (PHSR, 2, NotSerialized)
                 {
@@ -1468,6 +1468,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                         Return (Zero)
                     }
                 }
+		Return (Package(0x02){0x00,0x00})
             }
         }
 
@@ -9008,6 +9009,7 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                         Add (VALF, 0x01, VALF)
                     }
                 }
+		Return (Package(0x02){0x00,0x00})
             }
 
             Method (INFO, 0, Serialized)
