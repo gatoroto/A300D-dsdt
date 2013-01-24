@@ -1936,14 +1936,14 @@ DefinitionBlock ("dsdt.aml", "DSDT", 1, "TOSQCI", "TOSQCI00", 0x06040000)
                     0x00000000,         // Range Minimum
                     0x00000000,         // Range Maximum
                     0x00000000,         // Translation Offset
-                    0x00000000,         // Length
+                    0x00000001,         // Length
                     0x00,, _Y18, AddressRangeMemory, TypeStatic)
                 DWordMemory (ResourceProducer, SubDecode, MinFixed, MaxFixed, NonCacheable, ReadWrite,
                     0x00000000,         // Granularity
-                    0x00000000,         // Range Minimum
-                    0xFFFFFFFF,         // Range Maximum
-                    0x00000000,         // Translation Offset
-                    0x00000000,         // Length
+                    0x0000,         // Range Minimum
+                    0xFFFF,         // Range Maximum
+                    0x0000,         // Translation Offset
+                    0x10000,         // Length
                     0x00,, _Y19, AddressRangeMemory, TypeStatic)
                 IO (Decode16,
                     0x0CF8,             // Range Minimum
